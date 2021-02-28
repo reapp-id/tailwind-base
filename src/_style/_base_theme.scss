@@ -1,0 +1,107 @@
+@import "./base";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Work+Sans&display=swap');
+
+*{
+    font-family: 'Work Sans', sans-serif;
+}
+
+@mixin headings {
+    h1, h2, h3,
+    h4, h5, h6 {
+        @content;
+    }
+}
+
+@include headings{
+    font-family: Inter, sans-serif;
+}
+
+h1{
+    font-size: 93px;
+}
+h2{
+    font-size: 58px;
+}
+h3{
+    font-size: 47px;
+}
+h4{
+    font-size: 33px;
+}
+h5{
+    font-size: 23px;
+}
+body, .body, input, textarea{
+    font-size: 16px;
+}
+.body2, button, .btn{
+    font-size: 14px;
+}
+.overline{
+    font-size: 10px;
+}
+.caption{
+    font-size: 12px;
+}
+button, button:active, input, textarea, input:active, textarea:active{
+    outline: none;
+}
+
+@layer utilities{
+    @variants hover, focus{
+        .primary{
+            background-color: #70B77E;
+            color: #fff;
+        }
+        .primary--darker{
+          background-color: #497c53;
+          color: #fff;
+        }
+        .primary--reverse{
+            background-color:#fff;
+            color:  #70B77E;
+        }
+        .theme-text-primary{
+            color:  #70B77E;
+        }
+        .theme-bg-primary{
+            background-color:  #70B77E;
+        }
+        .theme-text-secondary{
+            color: #333;
+        }
+        .theme-bg-secondary{
+            background-color: #333;
+        }
+        .secondary{
+            background-color: #fff;
+            color: #333;
+        }
+        .important{
+            background-color: #CE1483;
+            color: #fff;
+        }
+        .warning{
+            background-color: #cc7550;
+            color: #fff;
+        }
+        .info{
+            background-color: #129490;
+            color: #fff;
+        }
+        .important--reverse{
+          color: #CE1483;
+          background-color: #fff;
+        }
+        .warning--reverse{
+          color: #cc7550;
+          background-color: #fff;
+        }
+        .info--reverse{
+          color: #129490;
+          background-color: #fff;
+        }
+    }
+}
+
+

@@ -1,0 +1,14 @@
+@font-face{
+    font-family: 'Work Sans';
+    src: url('./Work_Sans/WorkSans-VariableFont_wght.ttf');
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Work Sans';
+    src: url('./Work_Sans/WorkSans-Italic-VariableFont_wght.ttf');
+    font-style: italic;
+}
+@font-face{
+    font-family: Inter;
+    src: url('./Inter/Inter-VariableFont_slnt\,wght.ttf');
+}
